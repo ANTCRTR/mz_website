@@ -1,0 +1,115 @@
+// Specific CSS for your home-page
+body {
+  margin: 0;
+  font-family: Open Sans;
+  background-color: #F19067;
+}
+
+h1{
+  font-family: 'BIZ UDMincho', serif;
+  font-size: 100px;
+}
+h2, h3 {
+  font-family:'Hina Mincho', serif;
+}
+h4{
+  font-family:'Hina Mincho', serif;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* Custom design below! */
+
+.container {
+  width: 900px;
+  margin: auto;
+}
+
+.banner {
+  background-image: url("https://blog.bulldozair.com/wp-content/uploads/sites/2/2020/09/all-participants-in-construction-project-1024x640.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+  display: flex;
+}
+
+.banner h1 {
+  color: #ffffff;
+  padding: 100;
+  margin: 0;
+  text-shadow: -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+   1px 1px 0 #000;
+}
+
+.banner p {
+  color: #ffffff;
+  font-size: 30px;
+  font-family:'Hina Mincho', serif;;
+  text-shadow: -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+   1px 1px 0 #000;
+}
+
+
+
+.card img {
+  height: 100px;
+}
+
+.card p {
+  opacity: .5;
+}
+
+.card {
+  border-radius: 3px;
+  text-align: center;
+  position: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footer {
+  text-align: center;
+  padding: 60px;
+  background-color: #2c2b2b;
+}
+
+.footer a {
+  font-size: 30px;
+  color: #DEB058;
+}
+
+.footer p {
+  color: #6B6C6C;
+}
+
+.footer .fas {
+  color: #BF0F12;
+}
+
+.navbar-lewagon {
+  justify-content: space-between;
+  background: #ffffff;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
