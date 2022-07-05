@@ -1,48 +1,91 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
-    <%= link_to "#", class: "navbar-brand" do %>
-      <i class="fa-solid fa-screwdriver-wrench"></i> MZ Build and Refurb
-    <% end %>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-        <%# if user_signed_in? %>
-          <li class="nav-item active">
-            <%= link_to "Home", root_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "About Us", about_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Contact", contact_path, class: "nav-link" %>
-          </li>
-      </ul>
+    <div class="navbar fixed-top navbar-expand-sm navbar-light navbar-lewagon">
+      <div class="container-fluid">
+
+        <%= link_to "#", class: "navbar-brand" do %>
+          <i class="fa-solid fa-screwdriver-wrench"></i> MZ Build and Refurb
+        <% end %>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <%# if user_signed_in? %>
+              <li class="nav-item active">
+                <%= link_to "Home", root_path, class: "nav-link" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to "About Us", about_path, class: "nav-link" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to "Contact", contact_path, class: "nav-link" %>
+              </li>
+          </ul>
+        </div>
+
+      </div>
     </div>
-  </div>
-</div>
 
-
-<div class="banner">
-    <div class="container">
-      <h1>MZ BUILD AND REFURB</h1>
-      <p><i>Providing small and large scale repair solutions </i></p>
+    <!--banner -->
+    <div class="banner" style="margin-bottom: 30px">
+        <div class="container">
+          <h1>MZ BUILD AND REFURB</h1>
+          <p><i>Providing small and large scale repair solutions </i></p>
+        </div>
     </div>
+
+  <div class="container">
+        <!--row1 -->
+        <div class="row" style="height: 300px">
+
+            <div class="col-4">
+            <img src="https://sitemate.com/wp-content/uploads/2019/10/Construction-work-order-format-2.jpg" style="max-width: 100%;">
+            </div>
+
+            <div class="col">
+            <p> Since 2001, MZ Home and Refurb has been providing bespoke development solutions for small scale repair and total home overhauls for clients across London. </p>
+            </div>
+
+        </div>
+
+        <!--row2 -->
+        <div class="row" style="height: 300px">
+
+            <div class="col">
+            <p> Our experienced and dedicated team work together with clients to make sure projects are delivered on time and to the exact specifications and needs of the client.</p>
+            </div>
+
+            <div class="col-4">
+            <img src="https://www.build-review.com/wp-content/webp-express/webp-images/uploads/2021/06/Minimizing-Disruption-to-Construction-Projects-1536x864.jpg.webp" style="max-width: 100%;">
+            </div>
+
+        </div>
+
+        <!--row3 -->
+        <div class="row" style="height: 300px">
+
+            <div class="col-4">
+            <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/12B83/production/_110757667_construction.jpg" style="max-width: 100%;">
+            </div>
+
+            <div class="col">
+            <p> Feel free to get in touch for a quote or consultation on PHONE NUMBER or EMAIL today. </p>
+            </div>
+
+        </div>
   </div>
 
-  <!-- code a "How it works" section -->
+      <!-- code a footer -->
+      <div class="footer">
+          <div class="links">
+            <a href="https://www.facebook.com/profile.php?id=100011485906961"><i class="fab fa-fw fa-facebook-f"></i></a>
+            <a href="https://github.com/ANTCRTR"><i class="fab fa-fw fa-github"></i></a>
+            <a href="#"><i class="fab fa-fw fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-fw fa-instagram"></i></a>
+            <p>Built by AC</p>
 
-  <!-- code a footer -->
-  <div class="footer">
-    <div class="links">
-      <a href="https://www.facebook.com/profile.php?id=100011485906961"><i class="fab fa-fw fa-facebook-f"></i></a>
-      <a href="https://github.com/ANTCRTR"><i class="fab fa-fw fa-github"></i></a>
-      <a href="#"><i class="fab fa-fw fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-fw fa-instagram"></i></a>
-      <p>Built by AC</p>
-
-    </div>
-  </div>
+          </div>
+      </div>
