@@ -1,6 +1,6 @@
  <%#NAV %>
 
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+<div class="navbar fixed-top navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
     <%= link_to root_path, class: "navbar-brand" do %>
       <i class="fa-solid fa-screwdriver-wrench"></i> MZ Build and Refurb
@@ -30,13 +30,45 @@
 
   <%#BODY %>
 
-<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://img.ehstoday.com/files/base/ebm/ehstoday/image/2021/08/construction_workers_at_sunset.6109a7ff1c6ca.png?auto=format,compress&fit=crop&h=556&w=1000&q=45)">
-  About Us
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://img.ehstoday.com/files/base/ebm/ehstoday/image/2021/08/construction_workers_at_sunset.6109a7ff1c6ca.png?auto=format,compress&fit=crop&h=556&w=1000&q=45); margin-bottom: 50px">
+  <h3> About Us </h3>
 </div>
 
+
+<div class="container">
+
+  <div class="row" style="text-align: left">
+  <h3> Meet our team: </h3>
+  </div>
+
+  <div class="row">
+
+    <div class="card-product">
+      <img src="https://www.build-review.com/wp-content/uploads/2019/07/MOST-TRUSTED-BUILDER.png" />
+        <div class="card-product-infos">
+          <h2>Ivan Masckal</h2>
+          <p>Product description with <strong>relevant info</strong> only.</p>
+        </div>
+    </div>
+
+  </div>
+
+   <div class="row">
+
+    <div class="card-product">
+      <img src="https://www.checkatrade.com/blog/wp-content/uploads/2021/07/Feature-builder-day-rate-1024x683.jpg" />
+        <div class="card-product-infos">
+          <h2>Igor Surname</h2>
+          <p>Product description with <strong>relevant info</strong> only.</p>
+        </div>
+    </div>
+
+  </div>
+
+</div>
    <%#FOOTER %>
 
- <div class="footer">
+ <div class="footer fixed-bottom" style="position: relative">
     <div class="links">
       <a href="https://www.facebook.com/profile.php?id=100011485906961"><i class="fab fa-fw fa-facebook-f"></i></a>
       <a href="https://github.com/ANTCRTR"><i class="fab fa-fw fa-github"></i></a>
