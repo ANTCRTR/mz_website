@@ -35,7 +35,7 @@
 </div>
 
 
-<div class="container">
+<div class="container" style="width: auto">
 
   <div class="row" style="text-align: left">
   <h3> Meet our team: </h3>
@@ -43,27 +43,35 @@
 
   <div class="row">
 
+
+  <button type="button" class="collapsible-name">
     <div class="card-product">
       <img src="https://www.build-review.com/wp-content/uploads/2019/07/MOST-TRUSTED-BUILDER.png" />
         <div class="card-product-infos">
           <h2>Ivan Masckal</h2>
           <p>Product description with <strong>relevant info</strong> only.</p>
         </div>
-    </div>
-
   </div>
 
-   <div class="row">
-
-    <div class="card-product">
-      <img src="https://www.checkatrade.com/blog/wp-content/uploads/2021/07/Feature-builder-day-rate-1024x683.jpg" />
-        <div class="card-product-infos">
-          <h2>Igor Surname</h2>
-          <p>Product description with <strong>relevant info</strong> only.</p>
-        </div>
-    </div>
-
+</button>
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   </div>
+
+  <button type="button" class="collapsible-name">
+  <div class="card-product">
+    <img src="https://www.checkatrade.com/blog/wp-content/uploads/2021/07/Feature-builder-day-rate-1024x683.jpg" />
+      <div class="card-product-infos">
+        <h2>Igor Laty</h2>
+        <p>Product description with <strong>relevant info</strong> only.</p>
+      </div>
+  </div>
+
+  </button>
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
 
 </div>
    <%#FOOTER %>
@@ -78,3 +86,21 @@
 
     </div>
   </div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible-name");
+var i;
+console.log(coll)
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "flex") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "flex";
+    }
+  });
+}
+</script>
