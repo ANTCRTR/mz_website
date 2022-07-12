@@ -29,6 +29,8 @@ a {
 .container {
   width: 900px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .banner {
@@ -39,7 +41,7 @@ a {
   display: flex;
 }
 
-.banner h1 {
+.banner h2 {
   color: #ffffff;
   padding: 100;
   margin: 0;
@@ -51,7 +53,7 @@ a {
 
 .banner p {
   color: #ffffff;
-  font-size: 30px;
+  font-size: 10px;
   font-family:'Hina Mincho', serif;;
   text-shadow: -1px -1px 0 #000,
   1px -1px 0 #000,
@@ -111,4 +113,16 @@ a {
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+#row-1{
+  @include media-breakpoint-up(md) {
+    @include make-col(4);
+    }
+}
+
+#row-2{
+  @include media-breakpoint-up(md) {
+    @include make-col;
+    }
 }
